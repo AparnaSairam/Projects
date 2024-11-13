@@ -1,0 +1,222 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Main App Styles */
+.app {
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  background-color: #892121;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #882d2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+  background-color: #612835;
+}
+
+/* Home Page Styles */
+.home-content {
+  padding: 50px;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+}
+
+/* Form Styles (Login and Signup) */
+.form-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.form-container.dark {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+form input.dark {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4f171b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #61191c;
+}
+
+/* Dashboard Page Styles */
+.dashboard-page {
+  padding: 20px;
+}
+
+.dashboard-nav button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #7a2424;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-nav button:hover {
+  background-color: #5f2025;
+}
+
+.dashboard-main {
+  margin-top: 20px;
+}
+
+.dashboard-summary {
+  display: flex;
+  justify-content: space-around;
+}
+
+.summary-item {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: 30%;
+  transition: background-color 0.3s;
+}
+
+.summary-item.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Management Page Styles */
+.management-page {
+  padding: 20px;
+}
+
+.management-content {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.management-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.management-content ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.management-content ul li.dark {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+/* Settings Page Styles */
+.settings-page {
+  padding: 20px;
+}
+
+.settings-components {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+}
+
+.settings-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.settings-section select.dark {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
